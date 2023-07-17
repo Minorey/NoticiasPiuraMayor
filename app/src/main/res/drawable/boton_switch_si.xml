@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Item oval -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#9CE9FF"/>
+            <stroke android:width="1dp"
+                android:color="#FFFFFF"/>
+            <size android:width="60dp"
+                android:height="60dp"/>
+        </shape>
+    </item>
+
+    <!-- Primer item base_line_cloud -->
+    <item android:drawable="@drawable/baseline_cloud_24"
+        android:top="40dp"
+        android:bottom="0dp"
+        android:right="18dp"
+        android:left="16dp"/>
+
+    <!-- Segundo item base_line_cloud -->
+    <item android:drawable="@drawable/baseline_cloud_24"
+        android:top="26dp"
+        android:bottom="26dp"
+        android:right="39dp"
+        android:left="9dp"/>
+
+    <!-- Tercer item base_line_cloud -->
+    <item android:drawable="@drawable/baseline_cloud_24"
+        android:top="22dp"
+        android:bottom="28dp"
+        android:right="10dp"
+        android:left="40dp"/>
+
+    <!-- Item baseline_light_mode -->
+    <item android:drawable="@drawable/baseline_light_mode_24"
+        android:top="7dp"
+        android:bottom="7dp"
+        android:right="7dp"
+        android:left="7dp"/>
+
+</layer-list>
+
+
+
+
+
+
+

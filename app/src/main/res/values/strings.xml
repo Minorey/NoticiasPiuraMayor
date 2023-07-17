@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Noticias Piura 3.0</string>
+
+    <string name="splash_screen_info">© Noticias Piura 3.0 2022. Todos los derechos reservado</string>
+    <string name="progressdialog_title">Porfavor espere...</string>
+    <string name="progressdialog_message">Loading...</string>
+    <string name="add_as_favorite">add</string>
+    <string name="drawer_menu_favorites">Favoritos</string>
+    <string name="open_drawer">Open navigation drawer</string>
+    <string name="close_drawer">Close navigation drawer</string>
+
+
+    <string name="iniciarsesion">Iniciar Sesión</string>
+    <string name="Menú">Ventana</string>
+    <string name="nombreEmpresa">Noticias Piura 3.0</string>
+    <string name="hint_correo">  Ingrese su correo</string>
+    <string name="hint_contraseña"> Ingrese su contraseña</string>
+    <string name="bt_ingresar">Ingresar</string>
+    <string name="bt_registrar">Registrarse</string>
+    <string name="gint_nombre"> Nombres</string>
+    <string name="hint_apellidos"> Apellidos</string>
+    <string name="hint_confirmar"> Confirmar contraseña</string>
+    <string name="Bienvenido">Bienvenido</string>
+    <string name="txt_Usuario"> Usuario: </string>
+    <string name="bt_cerrarsesion">Cerrar Sesión</string>
+
+</resources>

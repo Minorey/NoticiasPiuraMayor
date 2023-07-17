@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "737156008587",
+    "project_id": "noticias30piurautp",
+    "storage_bucket": "noticias30piurautp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737156008587:android:6d43075e5416ffdddd228e",
+        "android_client_info": {
+          "package_name": "com.utp.testinnp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737156008587-kfkl4cksirkk52t3ogd4jdh8huap9sso.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.utp.testinnp",
+            "certificate_hash": "1abe97f48fe68fd7b715f2fb280dd17eb8cc5874"
+          }
+        },
+        {
+          "client_id": "737156008587-6cvhnolll0g8rbimo9a8lfqpiaosj2as.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxW79Bj4_UUxGghreZJj154BfeYjPswSo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737156008587-4qahp2fj8pn087kkbkpcn4msn9576pf8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

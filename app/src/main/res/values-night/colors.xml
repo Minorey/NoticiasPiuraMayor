@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="negro">#FFFFFFFF</color>
+    <color name="blanco">#FF000000</color>
+    <color name="amarillo">#FFFF66</color>
+    <color name="lavanda">#8692f7</color>
+    <color name="verde">#85FF7A</color>
+    <color name="rojoclaro">#FF7A7A</color>
+    <color name="naranja">#FFD17A</color>
+    <color name="azulclaro">#6791E1</color>
+    <color name="azul">#FF243C7B</color>
+    <color name="rojo">#8C030D</color>
+
+    //backsplash
+    <color name="colorSplashBackground">#141439</color>
+
+    //color set Primary
+    <color name="colorPrimary">#4C4C94</color>
+    <color name="colorPrimaryDark">#7A0303</color>
+    <color name="colorAccent">#A85353</color>
+    <color name="colorAhLightGrey">#57577C</color>
+
+    <color name="botonesinicio">#F23643 </color>
+    <color name="color1">#e40414 </color>
+    <color name="color2">#fc7c85 </color>
+    <color name="color3">#6791E1 </color>
+    <color name="color4">#54649c </color>
+    <color name="transparente">#00FFFFFF</color>
+
+    <color name="background_color">#2C2C2C</color>
+    <color name="primary_color">#2196F3</color>
+    <color name="primary_dark_color">#1976D2</color>
+    <color name="accent_color">#FF4081</color>
+
+    <color name="background_color_dark">#FF000000</color>
+    <color name="primary_color_dark">#03DAC6</color>
+    <color name="primary_dark_color_dark">#018786</color>
+    <color name="accent_color_dark">#FF4207</color>
+
+    <color name="text_color_primary">#000000</color>
+    <color name="text_color_secondary">#888888</color>
+    <color name="text_color_hint">#BBBBBB</color>
+    <color name="text_color_link">#FF4081</color>
+
+    <color name="status_bar_color">#EFEFEF</color>
+    <color name="navigation_bar_color">#FFF2F2</color>
+
+    <color name="text_color_primary_dark">#FFF2F2</color>
+    <color name="text_color_secondary_dark">#B2B2B2</color>
+    <color name="text_color_hint_dark">#777777</color>
+    <color name="text_color_link_dark">#FF5722</color>
+
+    <color name="status_bar_color_dark">#333333</color>
+    <color name="navigation_bar_color_dark">#333333</color>
+</resources>
