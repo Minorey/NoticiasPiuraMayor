@@ -27,12 +27,18 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.gson.JsonObject;
+import com.squareup.picasso.Picasso;
 import com.utp.testinnp.R;
+import com.utp.testinnp.adapter.PostAdapter;
 import com.utp.testinnp.api.http.ApiService;
 import com.utp.testinnp.api.http.WordPressClient;
 import com.utp.testinnp.model.Media;
+import com.utp.testinnp.model.Post;
 import com.utp.testinnp.sqlite.PostDB;
 import com.utp.testinnp.util.InternetConnection;
+
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -85,6 +91,7 @@ public class PostActivity extends AppCompatActivity {
 
             Call<Media> call = api.getPostThumbnail(featuredMedia);
 
+
             call.enqueue(new Callback<Media>() {
                 @Override
                 public void onResponse(Call<Media> call, Response<Media> response) {
@@ -93,6 +100,7 @@ public class PostActivity extends AppCompatActivity {
 
                     if (response.code() != 404) {
                         Media media = response.body();
+                        if (media != null){
                         String mediaUrl = media.getGuid().get("rendered").toString().replaceAll("\"", "");
 
                         Glide.with(getApplicationContext()).load(mediaUrl)
@@ -100,10 +108,27 @@ public class PostActivity extends AppCompatActivity {
                                 .centerCrop()
                                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                                 .into(postBackdrop);
+                        }else{
+                            Post currentPost = new Post();
+                            JsonObject yoastHeadJson = currentPost.getYoast_head_json();
+
+                            // Obtener el objeto JSON "og_image" dentro de "yoast_head_json"
+                            if (yoastHeadJson!=null && yoastHeadJson.has("og_image")){
+                                JsonObject ogImageJson = yoastHeadJson.getAsJsonArray("og_image").get(0).getAsJsonObject();
+                                // Obtener la URL del campo "url" dentro de "og_image"
+                                String imageUrl = ogImageJson.get("url").getAsString();
+                                Picasso.get().load(imageUrl).into(postBackdrop);
+
+                            } else {
+                                postBackdrop.setImageResource(R.drawable.logo);
+                            }
+                       }
                     } else {
 
                     }
                 }
+
+
 
                 @Override
                 public void onFailure(Call<Media> call, Throwable t) {
@@ -111,9 +136,12 @@ public class PostActivity extends AppCompatActivity {
                 }
             });
 
+
+
         } else {
             Snackbar.make(parentView, "Can't connect to the Internet", Snackbar.LENGTH_INDEFINITE).show();
         }
+
     }
 
     //Init Toolbar but do not set media

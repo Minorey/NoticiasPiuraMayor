@@ -13,6 +13,9 @@ public class HttpParams {
     //Media
     public static final String MEDIA_FEATURED = "media/{featured_media}";
 
+    //Categoria
+    public static  final String CATEGORY_FILTER = "posts?categories=11582";
+
     //Comment
     public static final String API_POST_A_COMMENT = "comments?";
     public static final String COMMENT_AUTHOR_NAME = "author_name";

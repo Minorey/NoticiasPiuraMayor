@@ -97,15 +97,21 @@ public class PostAdapter extends RecyclerView.Adapter {
             JsonObject yoastHeadJson = post.getYoast_head_json();
 
             // Obtener el objeto JSON "og_image" dentro de "yoast_head_json"
-            JsonObject ogImageJson = yoastHeadJson.getAsJsonArray("og_image").get(0).getAsJsonObject();
+            if (yoastHeadJson!=null && yoastHeadJson.has("og_image")){
+                JsonObject ogImageJson = yoastHeadJson.getAsJsonArray("og_image").get(0).getAsJsonObject();
+                // Obtener la URL del campo "url" dentro de "og_image"
+                String imageUrl = ogImageJson.get("url").getAsString();
+                Picasso.get().load(imageUrl).into(cardImage);
 
-            // Obtener la URL del campo "url" dentro de "og_image"
-            String imageUrl = ogImageJson.get("url").getAsString();
+            } else {
+                cardImage.setImageResource(R.drawable.logo);
+            }
 
             String author = post.getYoast_head_json().get("author").toString().replaceAll("noticiaspiura30.com","");
 
 
-            Picasso.get().load(imageUrl).into(cardImage);
+
+
 
             cardPt.setText(Html.fromHtml(title, Html.FROM_HTML_MODE_LEGACY));
             cardEx.setText(Html.fromHtml(excerpt, Html.FROM_HTML_MODE_LEGACY));

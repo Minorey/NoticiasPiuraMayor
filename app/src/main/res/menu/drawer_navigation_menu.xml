@@ -4,5 +4,9 @@
         android:id="@+id/my_favorites"
         android:icon="@drawable/ic_favorite_white_24dp"
         android:title="@string/drawer_menu_favorites" />
+    <item
+        android:id="@+id/my_home"
+        android:icon="@drawable/ic_favorite_white_24dp"
+        android:title="@string/drawer_menu_favorites" />
 
 </menu>

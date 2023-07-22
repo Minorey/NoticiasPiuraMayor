@@ -127,7 +127,7 @@ public class FragmentHome extends Fragment implements NavigationView.OnNavigatio
 
         switch (id) {
             case R.id.my_favorites:
-                Intent intent = new Intent(getActivity().getApplicationContext(), FavoritePostsActivity.class);
+                Intent intent = new Intent(getActivity().getApplicationContext(), FragmentFavoritos.class);
                 startActivity(intent);
                 break;
         }
